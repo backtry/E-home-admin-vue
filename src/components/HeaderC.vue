@@ -1,7 +1,7 @@
 <template>
     <div class="harder-p-box">
         <div style="text-align:center">header</div>
-        
+        <router-link to="/test">测试</router-link>
     </div>
 </template>
 <script>

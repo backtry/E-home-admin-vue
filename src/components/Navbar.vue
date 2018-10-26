@@ -27,7 +27,35 @@
                     添加管理员
                 </el-menu-item>
             </el-submenu>
-    </el-menu>  
+            <el-submenu index="3">
+                <template slot="title">
+                    <i class="el-icon-star-on"></i>
+                    <span>轮播图管理</span>
+                </template>
+                <el-menu-item index="/swiperlist" >
+                    <i class="el-icon-tickets"></i>
+                    轮播图列表
+                </el-menu-item>
+                <el-menu-item index="/addswiper">
+                    <i class="el-icon-circle-plus"></i>
+                    添加轮播图
+                </el-menu-item>
+            </el-submenu>
+            <el-submenu index="4">
+                <template slot="title">
+                    <i class="el-icon-star-on"></i>
+                    <span>新闻管理</span>
+                </template>
+                <el-menu-item index="/addnews" >
+                    <i class="el-icon-tickets"></i>
+                    新闻列表
+                </el-menu-item>
+                <el-menu-item index="/addswiper">
+                    <i class="el-icon-circle-plus"></i>
+                    添加新闻
+                </el-menu-item>
+            </el-submenu>
+        </el-menu>  
     </div>
 </template>
 <script>

@@ -35,6 +35,9 @@ const xhr = {
     },
     post(url,data,config){
         return this.fetch('post',url,data,config)
+    },
+    delete(url,data,config){
+        return this.fetch('delete',url,data,config)
     }
 }
 

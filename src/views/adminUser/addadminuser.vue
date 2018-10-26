@@ -67,6 +67,7 @@ export default {
                         phone:'',
                         sex:''
                     }
+                    this.$router.push('/adminlist')
                 }                
             })
         }

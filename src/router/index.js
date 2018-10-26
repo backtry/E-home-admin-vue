@@ -33,6 +33,26 @@ export default new Router({
           path:'/adduser',
           name:'adduser',
           component:()=>import('../views/adminUser/addadminuser.vue')
+        },
+        {
+          path:'/swiperlist',
+          name:'swiperlist',
+          component:()=>import('../views/swiper/swiperlist.vue')
+        },
+        {
+          path:'/addswiper',
+          name:'addswiper',
+          component:()=>import('../views/swiper/addswiper.vue')
+        },
+        {
+          path:'/addnews',
+          name:'addnews',
+          component:()=>import('../views/news/addnews.vue')
+        },
+        {
+          path:'/test',
+          name:'test',
+          component:()=>import('../views/test.vue')
         }
       ]
     }
