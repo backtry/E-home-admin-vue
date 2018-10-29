@@ -28,7 +28,13 @@ export default {
         login(){
             this.$axios.post('/admin/adminUser/login',this.formData).then(res=>{
                 console.log(res)
-                this.$router.push({path:'/home'})
+                if(res.code==200){
+                    this.$store.commit('GET_USERDATA',res.data)
+                    this.$message.success(res.msg)
+                    this.$router.push({path:'/home'})
+                }else{
+                    this.$message.info(res.msg)
+                }
             })
         }
     }

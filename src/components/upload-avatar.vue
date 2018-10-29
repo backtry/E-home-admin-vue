@@ -52,6 +52,8 @@ export default {
 .avatar-uploader{
     width: 178px;
     height: 178px; 
+    border: 1px dashed  #999;
+    border-radius: 6px;
 }
 .avatar-uploader .el-upload {
     border: 1px dashed #d9d9d9;

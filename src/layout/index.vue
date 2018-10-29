@@ -25,7 +25,8 @@ export default {
     background-color: #f1f1f1;
     .layout-content{
         background-color: #fff;
-        border: 1px solid #333;
+        border: 1px solid #ddd;
+        overflow: hidden;
         min-height: 820px;
         border-radius: 6px;
         box-shadow: 10px 10px 20px #222;

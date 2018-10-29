@@ -39,8 +39,8 @@ export default {
                 this.adminlistData = res.data
             })
         },
-        deleteAdminuser(_id){
-            this.$axios.delete(`/admin/adminUser?id=${_id}`).then(res=>{
+        deleteAdminuser(id){
+            this.$axios.delete(`/admin/adminUser/${id}`).then(res=>{
                 console.log(res)
                 if(res.code==200){
                     this.$message.success(res.msg)

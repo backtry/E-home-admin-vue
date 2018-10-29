@@ -45,9 +45,41 @@ export default new Router({
           component:()=>import('../views/swiper/addswiper.vue')
         },
         {
+          path:'/swipereditor',
+          name:'swipereditor',
+          component:()=>import('../views/swiper/addswiper.vue')
+        },
+        {
           path:'/addnews',
           name:'addnews',
-          component:()=>import('../views/news/addnews.vue')
+          component:()=>import('../views/news/addnews.vue'),
+          meta:{
+            title:'添加新闻',
+            Isinput:true
+          }
+        },
+        {
+          path:'/newseditor',
+          name:'newseditor',
+          component:()=>import('../views/news/addnews.vue'),
+          meta:{
+            title:'编辑新闻',
+            Isinput:true
+          }
+        },
+        {
+          path:'/newslist',
+          name:'newslist',
+          component:()=>import('../views/news/newslist.vue')
+        },
+        {
+          path:'/newsdetail',
+          name:'newsdetail',
+          component:()=>import('../views/news/newsdetail.vue'),
+          meta:{
+            title:'新闻详情',
+            Isinput:false
+          }
         },
         {
           path:'/test',

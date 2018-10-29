@@ -4,7 +4,8 @@
                 ref="myQuillEditor"
                 :options="editorOption"
                 @change="onEditorChange($event)"
-                :v-model="contentData">
+                :v-model="contentData"
+                class="richtext-box">
         </quill-editor>
     </div>
 </template>
@@ -26,7 +27,15 @@ Vue.use(VueQuillEditor, /* { default global options } */)
 export default {
     components: {quillEditor},
     props:{
-         value:Object  
+        value:Object,  
+        Fcontent:{
+            type:String,
+            required:true
+        },
+        FcontentText:{
+            type:String,
+            required:true
+        }
     },
     data() {
       return {
@@ -74,8 +83,10 @@ export default {
         }
     },
     watch:{
-        value(val){
-            this.contentData=val
+        Fcontent(val){
+            this.content=val
+            this.contentText = this.FcontentText
+            // console.log(this.Fcontent,this.FcontentText)
         }
     },
     created(){
@@ -85,5 +96,7 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-
+/deep/ .ql-container{
+    min-height: 255px;
+}
 </style>

@@ -38,6 +38,9 @@ const xhr = {
     },
     delete(url,data,config){
         return this.fetch('delete',url,data,config)
+    },
+    put(url,data,config){
+        return this.fetch('put',url,data,config)
     }
 }
 

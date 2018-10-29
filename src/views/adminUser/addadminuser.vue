@@ -97,8 +97,7 @@ export default {
         padding-top: 20px;
     }
     .avatar-img{
-        border: 1px dashed  #999;
-        border-radius: 6px;
+        
     }
     .addadminuser-btn{
         width: 250px;

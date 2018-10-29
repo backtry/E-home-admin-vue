@@ -43,14 +43,14 @@
             </el-submenu>
             <el-submenu index="4">
                 <template slot="title">
-                    <i class="el-icon-star-on"></i>
+                    <i class="el-icon-news"></i>
                     <span>新闻管理</span>
                 </template>
-                <el-menu-item index="/addnews" >
+                <el-menu-item index="/newslist" >
                     <i class="el-icon-tickets"></i>
                     新闻列表
                 </el-menu-item>
-                <el-menu-item index="/addswiper">
+                <el-menu-item index="/addnews">
                     <i class="el-icon-circle-plus"></i>
                     添加新闻
                 </el-menu-item>
