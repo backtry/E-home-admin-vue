@@ -31,7 +31,7 @@ export default {
                 console.log(res)
                 if(res.code==200){
                     this.$store.commit('GET_USERDATA',{})
-                    this.$message.success(res.msg)
+                    this.$message.info(res.msg)
                     this.$router.push('/')
                 }
             })

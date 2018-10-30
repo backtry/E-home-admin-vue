@@ -42,7 +42,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .login-p-box{
-    height: 100vh;
     
     // background-color: #003366;
     .login-container{

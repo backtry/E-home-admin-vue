@@ -4,7 +4,9 @@
         <div style="height:100vh;overflow: auto; clearfix">
             <HeaderC></HeaderC>
             <div class="layout-box">
-                <router-view class="layout-content"></router-view>
+                <transition name="fade-transform" mode="out-in" >
+                    <router-view class="layout-content" v-if="Show" ></router-view>
+                </transition>
             </div>
         </div>
     </div>
@@ -16,6 +18,11 @@ export default {
     components:{
         HeaderC,
         Navbar
+    },
+    data(){
+        return{
+            Show:true
+        }
     }
 }
 </script>
@@ -31,5 +38,26 @@ export default {
         border-radius: 6px;
         box-shadow: 10px 10px 20px #222;
     }
+}
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .8s;
+  transition-timing-function: linear;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: 
+    translateX(500px)
+    translateY(-500px)
+    rotateZ(360deg)
+    scale(0.01,0.01)
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: 
+    translateX(500px) 
+    translateY(-500px)
+    rotateZ(360deg)
+    scale(0.01,0.01)
 }
 </style>
